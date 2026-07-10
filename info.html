@@ -90,7 +90,8 @@
     text-align: center;
     margin-top: 44px;
   }
-  .body-text p + p { margin-top: 14px; }
+  .body-text p { text-wrap: balance; }
+  .body-text p + p { margin-top: 16px; }
   .body-text .em { font-weight: 700; color: #111; }
 
   /* ── 섹션 ── */
@@ -115,6 +116,7 @@
     color: #333;
     text-align: center;
   }
+  .info-block p { text-wrap: balance; }
   .info-block p + p { margin-top: 12px; }
   .info-block .note {
     font-size: 12px;
@@ -154,7 +156,7 @@
     color: #777;
   }
   .contact {
-    margin-top: 26px;
+    margin-top: 30px;
     font-size: 13px;
     color: #333;
   }
@@ -165,11 +167,29 @@
     color: #aaa;
     margin-bottom: 8px;
   }
+  .contact a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1px;
+  }
+
+  /* ── 가족사진 안내 박스 ── */
+  .family-box {
+    margin-top: 52px;
+    padding: 22px 20px;
+    background: #f7f7f5;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+  }
+  .family-box p { text-wrap: balance; }
 
   /* ── 하단 링크 ── */
   .apply-row {
     text-align: center;
-    margin-top: 64px;
+    margin-top: 56px;
   }
   .apply-row a {
     display: inline-block;
@@ -181,7 +201,9 @@
     padding: 15px 36px;
     border-radius: 30px;
     letter-spacing: -0.01em;
+    transition: transform 0.1s ease;
   }
+  .apply-row a:active { transform: scale(0.97); }
   .link-row {
     text-align: center;
     margin-top: 28px;
@@ -285,16 +307,16 @@
         <p class="consent-btn">[동의서 미리보기 / 다운로드 버튼]</p>
         <div class="contact">
           <p class="label">문의</p>
-          <p>함윤규 · hamyunguu@gmail.com · 010-8457-3450</p>
+          <p>함윤규</p>
+          <p style="margin-top:6px;"><a href="mailto:hamyunguu@gmail.com">hamyunguu@gmail.com</a></p>
+          <p style="margin-top:6px;"><a href="tel:010-8457-3450">010-8457-3450</a></p>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="info-block">
-        <p>촬영 당일 원하시는 분들에 한 해<br>개별적으로 가족 사진 촬영을 도와드릴 예정입니다.</p>
-      </div>
-    </section>
+    <div class="family-box">
+      <p>촬영 당일 원하시는 분들에 한 해<br>개별적으로 <strong>가족 사진 촬영</strong>을 도와드릴 예정입니다.</p>
+    </div>
 
     <div class="apply-row">
       <a href="https://forms.gle/Hw2PPMHE1awAwehbA" target="_blank">프로젝트 참여 신청하기</a>
