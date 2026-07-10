@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>자양우성아파트1차 104동 안내</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; overflow: hidden; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background: #000;
+  }
+  .cover {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .cover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 35%);
+  }
+  .tap-hint {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    z-index: 2;
+    animation: pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+  <a class="cover" href="info.html">
+    <img src="assets/cover.jpg" alt="자양우성아파트1차 104동">
+    <div class="tap-hint">화면을 눌러 안내문 보기</div>
+  </a>
+</body>
+</html>
