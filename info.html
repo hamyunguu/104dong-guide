@@ -62,11 +62,29 @@
     width: 100%;
     display: block;
   }
-  .team-photo {
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+  .id-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     margin-top: 28px;
+  }
+  .id-card {
+    margin: 0;
+  }
+  .id-card img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    background: #f2f2f0;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+  .id-card figcaption {
+    text-align: center;
+    font-size: 12px;
+    color: #444;
+    margin-top: 8px;
+    letter-spacing: 0.02em;
   }
   .caption {
     font-size: 11px;
@@ -224,8 +242,19 @@
       <p>건국대학교 산업디자인학과에 재학 중인<br>4학년 김한주, 윤찬혁, 함윤규입니다.</p>
     </div>
 
-    <div class="photo team-photo">
-      <img src="assets/team.jpg" alt="프로젝트팀 김한주, 윤찬혁, 함윤규">
+    <div class="id-photos">
+      <figure class="id-card">
+        <img src="assets/id-kim.png" alt="김한주 증명사진">
+        <figcaption>김한주</figcaption>
+      </figure>
+      <figure class="id-card">
+        <img src="assets/id-yoon.png" alt="윤찬혁 증명사진">
+        <figcaption>윤찬혁</figcaption>
+      </figure>
+      <figure class="id-card">
+        <img src="assets/id-ham.png" alt="함윤규 증명사진">
+        <figcaption>함윤규</figcaption>
+      </figure>
     </div>
 
     <div class="body-text">
